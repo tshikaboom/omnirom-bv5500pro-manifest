@@ -8,6 +8,8 @@
            remote="aosp"
            sync-c="true"
            sync-j="12" />
+  <remote  name="tshikaboom"
+	   fetch="https://github.com/tshikaboom/android_device_blackview_bv5500pro" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -785,4 +787,5 @@
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
   <!-- OmniROM -->
   <include name="omni-default.xml" />
+  <project path="device/blackview/bv5500pro" name="android_device_blackview_bv5500pro" remote="tshikaboom" revision="master" />
 </manifest>
